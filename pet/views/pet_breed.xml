@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="pet_breed_view_form" model="ir.ui.view">
+            <field name="name">pet.breed.view.form</field>
+            <field name="model">pet.breed</field>
+            <field name="arch" type="xml">
+                <form string="Pet Breed">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="pet_type_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="pet_breed_view_tree" model="ir.ui.view">
+            <field name="name">pet.breed.view.tree</field>
+            <field name="model">pet.breed</field>
+            <field name="arch" type="xml">
+                <tree string="Pet Breed">
+                    <field name="name"/>
+                    <field name="pet_type_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="pet_breed_view_search" model="ir.ui.view">
+            <field name="name">pet.breed.view.search</field>
+            <field name="model">pet.breed</field>
+            <field name="arch" type="xml">
+                <search string="Pet Breed">
+                    <field name="name"/>
+                    <field name="pet_type_id"/> 
+                </search>
+            </field>
+        </record>
+
+        <record id="action_pet_breed" model="ir.actions.act_window">
+            <field name="name">Pet Breed</field>
+            <field name="res_model">pet.breed</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="pet_breed_view_search"/>
+            <field name="view_id" ref="pet_breed_view_tree"/>
+        </record>
+
+    </data>
+</odoo>

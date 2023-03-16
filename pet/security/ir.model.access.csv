@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pet_allergic_to_medications,pet_allergic_to_medications,model_pet_allergic_to_medications,base.group_user,1,1,1,1
+access_pet_breed,pet_breed,model_pet_breed,base.group_user,1,1,1,1
+access_pet_diagnosis,pet_diagnosis,model_pet_diagnosis,base.group_user,1,1,1,1
+access_pet_medical_history,pet_medical_history,model_pet_medical_history,base.group_user,1,1,1,1
+access_pet_pet,pet_pet,model_pet_pet,base.group_user,1,1,1,1
+access_pet_type,pet_type,model_pet_type,base.group_user,1,1,1,1

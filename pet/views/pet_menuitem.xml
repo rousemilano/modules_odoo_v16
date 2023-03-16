@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="root_pet_menu"
+        name="Pet"
+        web_icon="pet,static/description/icon.png"
+        sequence="10"/>
+    
+    <menuitem
+        id="pet_breed_menu"
+        name="Breed"
+        action="action_pet_breed"
+        parent="pet.root_pet_menu"
+        sequence="10"/>
+
+</odoo>
